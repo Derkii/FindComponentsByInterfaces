@@ -7,5 +7,5 @@ Just write Finder like: ```Finder.FindByInterface<Interface1>().FindByInterface<
 ### Information about "under the hood"
 ```Finder.FindByInterface<TInterface>()``` returns ```FindRequestBuilder``` that also has ```FindByInterface<TInterface>()``` method, so you can use it for write finders.
 When you finish to build Finder, use ```Build()``` method that returns FindRequest. 
-It gets components in constructor, you shouldn't invoke any methods to do it. Just get components by property, or get components as interfaces by use ```ComponentsByInterface<T>()``` that returns ```IEnumerable<T>```. 
+It gets components in constructor, you shouldn't invoke any methods to do it. Just get components by property ```Components```, or get components as interfaces by use ```ComponentsByInterface<T>()``` that returns ```IEnumerable<T>```. 
 
